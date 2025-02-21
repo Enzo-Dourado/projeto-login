@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* 
+pequenas telas: ate 600px
+max-width: 600px
+
+celular: 600px - 769px
+min-width: 600px max-width: 768px
+
+tablet: 768px- 992px
+min-width: 768px max-width: 992px
+
+desktop: 992px - 1200px
+min-width: 992px max-width: 1200px
+
+telas grandes: 1200px- xxx px
+min-width: 1200px
+*/
+
+:root {
+
+    /* Cores */
+    --cor-principal: #bebebe;
+    --cor-secundaria: #8F8F8F;
+    --cor-terciaria: #323232;
+
+    --cor-secA: #FF4D4D;
+    --cor-secB: #1B3A24;
+    --cor-secC: #4F2B2B;
+
+    --cor-terA: #58316C;
+    --cor-terB: #8F5DA8;
+    --cor-terC: #819345;
+
+    /* Fontes */
+    
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --fonte-secundaria: 'Courier New', Courier, monospace
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-secC), var(--cor-terA), var(--cor-terB));
+    }
+    section#login {
+        width: 85vw;
+        height: 600px;
+        background-color: var(--cor-principal);
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
+    }
+
+    section#login > div#imagem {
+        background: url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
+        background-size: cover;
+        background-position: right center;
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+        
+    }
+}
+@media screen  and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-secC), var(--cor-terA), var(--cor-secB));
+    }
+    section#login {
+        width: 900px;
+        height: 750px;
+        background-color: var(--cor-principal);
+        transition: width .5s, height .5s;
+        transition-timing-function: ease;
+    }
+
+    section#login > div#imagem {
+        background: url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
+        background-size: cover;
+        background-position: center top;
+        width: 50%;
+        height: 100%;
+        float: right;
+    }
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+        
+    }
+}
+
