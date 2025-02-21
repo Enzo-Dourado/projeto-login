@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
 /* 
+
+orientation: landscape => Deitado
+orientation: portrait => Em pé
+
+
+
 pequenas telas: ate 600px
 max-width: 600px
 
@@ -37,6 +43,33 @@ min-width: 1200px
     --fonte-principal: Arial, Helvetica, sans-serif;
     --fonte-secundaria: 'Courier New', Courier, monospace
 
+}
+
+@media screen and (orientation: landscape){
+    section#login {
+        background-color: var(--cor-secundaria);
+        width: 550px;
+        height: 300px;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        box-shadow: 3px 3px 10px #00000073;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 35%;
+        height: 100vh;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 65%;
+        
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
