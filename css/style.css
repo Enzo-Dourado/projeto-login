@@ -61,12 +61,12 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 3px 3px 10px #00000073;
+    transform: translate(-50%, -50%);
 }
 
-div{ 
+div { 
     display: block;
 }
 
@@ -95,11 +95,21 @@ section#login > div#formulario p {
     line-height: 1.2em;
 }
 
+
+
+div.login-senha {
+    background-color: var(--cor-terciaria);
+    margin: 0px;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
 span {
     background-color: var(--cor-terB);
     margin-left: 20px;
     border: 1px solid #000000;
     padding: 5px;
+    transform: translateY(10px);
 }
 
 span#boneco {
@@ -126,7 +136,7 @@ span#chave:hover {
 }
 
 input.entrar {
-    margin: 10px auto;
+    margin:auto;
     padding: 7px;
     width: 100%;
     text-align: center;
@@ -177,12 +187,17 @@ input#ilogin, input#isenha {
     margin: 1px;
     transition: .4s;
     transition-timing-function: ease;
+    transform: translateY(5px);
     
 }
 
 input#ilogin:hover, input#isenha:hover {
     border: 1px solid #000000;
-    background-color: var(--cor-terciaria);
+    background-color: #a1b856;
     box-shadow: 1px 1px 10px #0000008c;
     
+}
+
+input#ilogin:focus-within, input#isenha:focus-within {
+    background-color: #a1b856;
 }

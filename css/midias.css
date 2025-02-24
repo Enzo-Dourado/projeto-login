@@ -48,14 +48,14 @@ min-width: 1200px
     section#login {
         background-color: var(--cor-secundaria);
         width: 550px;
-        height: 300px;
+        height: 320px;
         border-radius: 20px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         overflow: hidden;
         box-shadow: 3px 3px 10px #00000073;
+        transform: translate(-50%, -50%);
     }
 
     section#login > div#imagem {
@@ -68,8 +68,7 @@ min-width: 1200px
 
     section#login > div#formulario {
         float: right;
-        width: 65%;
-        
+        width: 65%; 
     }
 }
 
@@ -79,7 +78,7 @@ min-width: 1200px
     }
     section#login {
         width: 85vw;
-        height: 80vh;
+        height: 320px;
         background-color: var(--cor-principal);
         transition: width .3s, height .3s;
         transition-timing-function: ease;
@@ -98,7 +97,12 @@ min-width: 1200px
         width: 60%;
         
     }
+
+    input#ilogin, input#isenha {
+        width: 80%;
+    }
 }
+
 @media screen  and (min-width: 992px) {
 
     body {
@@ -106,7 +110,7 @@ min-width: 1200px
     }
     section#login {
         width: 900px;
-        height: 750px;
+        height: 350px;
         background-color: var(--cor-principal);
         transition: width .3s, height .3s;
         transition-timing-function: ease;
@@ -124,6 +128,10 @@ min-width: 1200px
         float: left;
         width: 50%;
         
+    }
+
+    input#ilogin, input#isenha {
+        width: 80%;
     }
 }
 
