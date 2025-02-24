@@ -2,9 +2,8 @@
 
 /* 
 
-orientation: landscape => Deitado
-orientation: portrait => Em pé
-
+orientation: landscape => Deitado == Paisagem
+orientation: portrait => Em pé == Retrato
 
 
 pequenas telas: ate 600px
@@ -45,7 +44,7 @@ min-width: 1200px
 
 }
 
-@media screen and (max-width:768px) and (orientation: landscape){
+@media screen and (max-width: 950px) and (orientation: landscape){
     section#login {
         background-color: var(--cor-secundaria);
         width: 550px;
@@ -78,7 +77,7 @@ min-width: 1200px
     }
     section#login {
         width: 85vw;
-        height: 600px;
+        height: 80vh;
         background-color: var(--cor-principal);
         transition: width .5s, height .5s;
         transition-timing-function: ease;
@@ -88,13 +87,13 @@ min-width: 1200px
         background: url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
         background-size: cover;
         background-position: right center;
-        width: 30%;
+        width: 40%;
         height: 100%;
         float: left;
     }
     section#login > div#formulario {
         float: right;
-        width: 70%;
+        width: 60%;
         
     }
 }
