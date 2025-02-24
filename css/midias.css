@@ -45,7 +45,7 @@ min-width: 1200px
 
 }
 
-@media screen and (max-width:600px) and (orientation: landscape){
+@media screen and (max-width:768px) and (orientation: landscape){
     section#login {
         background-color: var(--cor-secundaria);
         width: 550px;
