@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Chave -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=key" />
-
-    <!-- Bonequinho -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=passkey" />
-
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/midias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Projeto - 4</title>
 </head>
 <body>
     <!--
+    
     <span class="material-symbols-outlined">
-        key
+        person
     </span>
+
     <span class="material-symbols-outlined">
-        passkey
+        vpn_key
     </span>
     -->
     <main>
@@ -30,7 +27,28 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente, acesse seu login para entrar!</p>
-                <form action="../js/login.js" method="post">
+                <form action="../js/login.js" method="post" autocomplete="on">
+                    <div class="login-senha">
+                        <label for="ilogin">
+                            <span class="material-symbols-outlined" id="boneco">
+                                for_you
+                                </span>
+                        </label>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="40">
+                        
+                    </div>
+
+                    <div class="login-senha">
+                        <label for="isenha">
+                            <span class="material-symbols-outlined" id="chave">
+                                vpn_key
+                                </span>
+                        </label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" maxlength="20" autocomplete="current-password" required>
+                    </div>
+
+                        <input type="submit" value="Enviar">
+                        <a href="esqueci.html">Esqueci a Senha</a>
 
                 </form>
             </div>
