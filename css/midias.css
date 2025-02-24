@@ -81,7 +81,7 @@ min-width: 1200px
         width: 85vw;
         height: 80vh;
         background-color: var(--cor-principal);
-        transition: width .5s, height .5s;
+        transition: width .3s, height .3s;
         transition-timing-function: ease;
     }
 
@@ -108,7 +108,7 @@ min-width: 1200px
         width: 900px;
         height: 750px;
         background-color: var(--cor-principal);
-        transition: width .5s, height .5s;
+        transition: width .3s, height .3s;
         transition-timing-function: ease;
     }
 
