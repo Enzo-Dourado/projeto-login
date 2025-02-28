@@ -27,7 +27,7 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente, acesse seu login para entrar!</p>
-                <form action="../js/login.js" method="post" autocomplete="on">
+                <form action="../js/login.php" method="post" autocomplete="on">
                     <div class="login-senha">
                         <label for="ilogin">
                             <span class="material-symbols-outlined" id="boneco">
@@ -47,12 +47,13 @@
                         <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" maxlength="20" autocomplete="current-password" required>
                     </div>
 
-                        <input type="submit" value="Entrar" class="entrar">
+                        <input type="submit" value="Entrar" class="entrar" onclick="entrar()">
                         <a href="esqueci.html" class="esqueci-senha">Esqueci a Senha</a>
 
                 </form>
             </div>
         </section>
     </main>
+    <script src="../js/login.js"></script>
 </body>
 </html>
