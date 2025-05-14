@@ -71,7 +71,7 @@ div {
 }
 
 section#login > div#imagem {
-    background: var(--cor-terA) url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
+    background: var(--cor-terA) url(../imgs/pexels-img-login-atualizada.jpg) no-repeat;
     background-size: cover;
     background-position: center top;
     height: 220px; 

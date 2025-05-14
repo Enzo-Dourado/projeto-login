@@ -85,7 +85,7 @@ min-width: 1200px
     }
 
     section#login > div#imagem {
-        background: url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
+        background: url(../imgs/pexels-img-login-atualizada.jpg) no-repeat;
         background-size: cover;
         background-position: right center;
         width: 40%;
@@ -117,7 +117,7 @@ min-width: 1200px
     }
 
     section#login > div#imagem {
-        background: url(../imagens/pexels-img-login-atualizada.jpg) no-repeat;
+        background: url(../imgs/pexels-img-login-atualizada.jpg) no-repeat;
         background-size: cover;
         background-position: center top;
         width: 50%;
